@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .header {
+            background-color: rgb(226, 7, 7);
+            color: aliceblue;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .headring {
+            background-image: url(assets/ferrari-812-competizione-1.webp);
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .headring h1 {
+            font-size: 5rem;
+            color: black;
+            animation-name: bounce;
+            animation-duration: 2s;
+
+
+        }
+
+        @keyframes bounce {
+            0% {
+                left: 0;
+                bottom: 0;
+                /* transform: translateY(0);
+                    transform: translatey(0); */
+            }
+
+            25% {
+                left: 30px;
+                top: 40px;;
+            }
+
+            100% {
+                right: 10px;
+                down:10px ;
+            }
+        }
+
+        .cars {
+            width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 40px 8px rgba(72, 69, 69, 0.9);
+            background-color: rgb(252, 250, 250);
+            text-align: center;
+            transition: background-color 2s ease-in-out;
+            transition: margin-left 2s ease-in-out;
+            animation: spin 1s linear infinite;
+
+
+        }
+
+        /* @keyframes spin{
+            from{transform:rotate(0deg);}
+            to{transform:rotate(360deg);}
+            }
+             */
+        .cars:hover {
+            background-color: aqua;
+            color: black;
+            margin-left: 200px;
+        }
+
+        /* .cars:{
+            width: 100px;
+            height:100px;
+            background-color: aqua;
+            animation: spin in linear infinite;
+            margin: 20px 0px;
+        } */
+
+        /* .table{ 
+           width:100%
+        }   */
+        .cars h3 {
+            text-shadow: 2px 2px 5px rgba(72, 69, 69, 0.9)
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+                <!-- <li><p>MUSIC</p></li> -->
+                <a class="dropbtn">MUSIC</a>
+                <div class="dropdown-content">
+                    <a href="melody.html">MELODY SONGS</a>
+                    <a href="rock.html">ROCK SONGS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">VEHICLES</a>
+                <!-- <a href="vehicles.html">VEHICLES</a></li> -->
+                <DIV CLASS=" dropdown-content">
+                    <a href="cars.html">CARS</a>
+                    <a href="bikes.html">BIKES</a>
+                </DIV>
+            </li>
+            <li><a href="nature.html">NATURE</a></li>
+            <li><a href="hometown.html">HOMETOWN</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    
+    <div class="header">
+
+        <h1>CARS</h1>
+    </div>
+    <div class="headring">
+        <h1>cars</h1>
+    </div>
+    <!-- <table style="width:100%;height:322221+00px;">
+  <table border ="10"></table>
+  <div class="table"></div> -->
+
+
+    <table>
+
+        <tr>
+            <th><I>company</I></th>
+            <th><I>model</I></th>
+            <th>engine capacity</th>
+
+        </tr>
+        <tr>
+            <th><MARK>MAHINDRA</MARK></th>
+            <th><EM>THAR</EM></th>
+            <th><B>1497cc</B></th>
+
+        </tr>
+        <tr>
+            <th><MARK>TOYOTA</MARK></TH>
+            <th><EM>SUPRA</EM></th>
+            <th><B>2998CC</B></th>
+        </tr>
+        <tr>
+            <TH><MARK>BMW</MARK></TH>
+            <th><EM>ROLLS ROYCE</EM></th>
+            <th><B>6749cc</B></th>
+
+        </tr>
+        <tr>
+            <th><MARK>LAND ROVER</MARK></th>
+            <TH><EM>DEFENDER</EM></TH>
+            <TH><b>5000CC</b></TH>
+
+
+        </tr>
+    </table>
+    <div class="cars">
+        <img src="assets/th (1).jpeg" alt="cars">
+        <h3>rolls royce</h3>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <STYLE>
+    .header {
+        background-color: rgb(13, 226, 23);
+        color: rgb(13, 15, 16);
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .headring {
+        background-image:url(assets/full_42489.webp); 
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        width:100%;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .image-container{
+        width:300px;
+        height:300px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(rgb(16, 15, 15), green, rgb(2, 2, 2), 0.2); 
+        transition: transform 0.3s ease;
+    }
+    .image-container img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        position: relative;
+        transform-style:preserve-3d ;
+        transition: transform 0.8s;
+        
+    }
+    .image-container:hover img{
+        transform: rotateY(180deg);
+    }
+    </STYLE>
+</head>
+<body>
+    
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+                <!-- <li><p>MUSIC</p></li> -->
+                <a class="dropbtn">MUSIC</a>
+                <div class="dropdown-content">
+                    <a href="melody.html">MELODY SONGS</a>
+                    <a href="rock.html">ROCK SONGS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">VEHICLES</a>
+                <!-- <a href="vehicles.html">VEHICLES</a></li> -->
+                <DIV CLASS=" dropdown-content">
+                    <a href="cars.html">CARS</a>
+                    <a href="bikes.html">BIKES</a>
+                </DIV>
+            </li>
+            <li><a href="nature.html">NATURE</a></li>
+            <li><a href="hometown.html">HOMETOWN</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+<div class="header">
+
+    <h1>NATURE</h1>
+</div>
+    <div class="headring">
+        <h1>NATURE</h1>
+   
+</div>  
+       <div class="gallery">
+                    <div class="image-container ">
+                        <img src="./assets/natural-beauty-of-kanyakumari-nagercoil-ho-nagercoil-tourist-attraction-ayjvifvdki.avif" alt="field"/>
+                        </div>
+                        <div class="image-container">
+                            <img src="./assets/Hopetoun_falls.jpg" alt="water fall"/> 
+                        </div>
+                        <div class="image-container">
+                            <img src="./assets/pexels-photo-417074.jpeg" alt="mountains"/> 
+                        </div> 
+                        <div class="image-container">
+                             <img src="./assets/Waterfall_at_Arthur's_Pass_National_Park.jpg" alt="waterfall">
+                        </div>                                                    
+          
+                                   
+
+
+</body>
+</html>
